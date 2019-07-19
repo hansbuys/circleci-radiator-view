@@ -173,7 +173,11 @@ var circleBackend = function(settings, resultCallback) {
               return
             }
             var buildIsRunning = branch.running_builds.length != 0
-            var build = buildIsRunning ? branch.running_builds[0] : branch.recent_builds[0]
+            let recent_builds = branch.recent_builds
+            if (recent_builds) {
+              recent_builds = recent_builds.sort((a, b) => b.build_num - a.build_num)
+            }
+            var build = buildIsRunning ? branch.running_builds[0] : recent_builds[0]
             var status = buildIsRunning ? build.status : build.outcome
             return {
               repository: repository.reponame,
