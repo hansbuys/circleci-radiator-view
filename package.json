@@ -1,0 +1,26 @@
+{
+  "name": "circleci-radiator-view",
+  "version": "1.0.0",
+  "description": "Many continuous integration services lack a nice and simple radiator view / dashboard. This project displays all your projects and selected branches with a beautiful build status based coloring.",
+  "main": "docs/index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampsakuronen/circleci-radiator-view.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sampsakuronen/circleci-radiator-view/issues"
+  },
+  "homepage": "https://github.com/sampsakuronen/circleci-radiator-view#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-google": "^0.13.0"
+  }
+}
